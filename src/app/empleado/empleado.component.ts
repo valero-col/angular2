@@ -29,13 +29,12 @@ export class EmpleadoComponent implements OnInit {
 
     getRegistroUsuario(){
       this.URegistrado=false;
-
-
-
-
     }
     
-      ngOnInit(): void {
+    setusuarioregistrado(){
+      alert ("El usuario se acaba de registrar");
+    }
+    ngOnInit(): void {
       }
 
     }
