@@ -19,6 +19,8 @@ export class EmpleadoComponent implements OnInit {
       return this.edad;
  }*/
 
+  textoRegistro="No hay nadie registrado";
+
   habilitacionCuadro=false;
 
   URegistrado=false;
@@ -31,8 +33,15 @@ export class EmpleadoComponent implements OnInit {
       this.URegistrado=false;
     }
     
-    setusuarioregistrado(){
-      alert ("El usuario se acaba de registrar");
+    setusuarioregistrado(event:Event){
+      //alert ("El usuario se acaba de registrar");
+      //this.textoRegistro="El usuario se acaba de registrar";
+        if((<HTMLInputElement>event.target).value=="si"){
+            this.textoRegistro="El usuario se acaba de registrar";
+        }
+        else{
+          this.textoRegistro="No hay nadie registrado";
+        }
     }
     ngOnInit(): void {
       }
