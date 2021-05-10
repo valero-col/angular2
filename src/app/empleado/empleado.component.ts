@@ -9,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpleadoComponent implements OnInit {
 
-  nombre="juan"
+  nombre="juan";
   apellido="Díaz";
   //private
-   edad=28;
-  //empresa="Microsoft";
+  edad=28;
+  empresa="ACM1PT";
+   
+  
   constructor() { }
  /*getEdad(){
       return this.edad;
@@ -25,10 +27,7 @@ export class EmpleadoComponent implements OnInit {
 
   URegistrado=false;
 
-    llamaEmpresa(value:String){
-      
-    }
-
+  
     getRegistroUsuario(){
       this.URegistrado=false;
     }
@@ -43,6 +42,7 @@ export class EmpleadoComponent implements OnInit {
           this.textoRegistro="No hay nadie registrado";
         }
     }
+
     ngOnInit(): void {
       }
 
